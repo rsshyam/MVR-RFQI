@@ -1,0 +1,1 @@
+python datagnr_old_baselines.py name=us-reacher alg=us num_iters=20 eval_frequency=20 env=reacher num_eval_trials=20 use_old_sac_baselines=True num_epochs_old_baselines=1000 generate_data_using_true_sac=True buffer_size=1e6 

@@ -1,0 +1,1 @@
+python datagnr.py name=us_cartpole alg=us num_iters=150 eval_frequency=150 env=cartpole num_eval_trials=1 check_lrntmod_perf=True generate_data_using_mpc=True buffer_size=1e5 
