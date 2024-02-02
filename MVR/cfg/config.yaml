@@ -1,0 +1,63 @@
+defaults:
+  - _self_
+  - env: pendulum
+  - alg: bac
+name: "default"
+proj_expt_name: pendulum
+num_eval_trials: 1
+eval_frequency: 50
+Delta: 0.1
+env:
+    teleport: True
+    normalize_env: True
+    sample_exe: False
+    gp:
+      periodic: False
+      opt_max_iter: 1000
+alg:
+    uncertainty_sampling: False
+use_neptune: False
+num_iters: ${alg.num_iters}
+seed: 13
+seed2: 7
+comp_perturb: False
+policy_comp_perturb: False
+envclipped: False
+sep_perturb: False
+eval_hor: 200
+gaus_nois: False
+Delta2scale: 1
+Delta_train: 0.2
+expt_setting: "normal"
+mpc: ${env.mpc}
+fixed_start_obs: True
+num_samples_mc: 1
+num_init_data: 1
+test_set_size: 1000
+n_paths: 15
+sample_exe: ${env.sample_exe}
+path_sampling_fraction: 0.8
+path_sampling_noise: 0.01
+normalize_env: ${env.normalize_env}
+n_rand_acqopt: ${alg.n_rand_acqopt}
+crop_to_domain: True
+teleport: ${env.teleport}
+fit_hypers: False
+check_lrntmod_perf: None
+check_mpc_perf: False
+check_sac_perf: False
+generate_data_using_sac: False
+generate_data_using_true_sac: False
+check_sac_perf_multiple: False
+check_true_sac_perf: False
+data_eps: 0.3
+time_date: ${now:%Y-%m-%d-%H-%M}
+training_steps: 1e4
+hydra:
+  job:
+    name: ${name}
+  run:
+      dir: experiments/${name}_${now:%Y-%m-%d}/${now:%H-%M-%S}
+  sweep:
+      dir: experiments/${name}_${now:%Y-%m-%d}/${now:%H-%M-%S}
+      subdir: seed_${hydra.job.num}
