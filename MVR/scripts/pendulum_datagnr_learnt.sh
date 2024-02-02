@@ -1,0 +1,1 @@
+python datagnr.py name=us_pendulum alg=us num_iters=60 eval_frequency=60 env=pendulum num_eval_trials=10 check_sac_perf=True generate_data_using_sac=True training_steps=10000 data_eps=0.5 
