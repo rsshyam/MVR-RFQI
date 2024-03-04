@@ -11,7 +11,7 @@ Clone conda environments rqitry2 and rqicombwthrlkit2 from the environment files
 
 (Or)
 
-Create a python 3.9.16 conda environment and pip install mvr_requirements.txt to run the MVR related scripts.
+Create a python 3.9.16 conda environment, and install package in the environment 'conda install -c conda-forge swig' and pip install mvr_requirements.txt to run the MVR related scripts.
 
 We separate the data generation and training process into 2 different environments as they were not compatible with each other. 
 
