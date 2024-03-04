@@ -9,6 +9,10 @@ The perturbed environments on which we test the algorithm have to be defined as 
 
 Clone conda environments rqitry2 and rqicombwthrlkit2 from the environment files rqitry2.yml and rqicombwthrlkit2.yml
 
+(Or)
+
+Create a python 3.9.16 conda environment and pip install mvr_requirements.txt to run the MVR related scripts.
+
 We separate the data generation and training process into 2 different environments as they were not compatible with each other. 
 
 **Part-1 (Data-generation from various environments from MVR Folder)**
