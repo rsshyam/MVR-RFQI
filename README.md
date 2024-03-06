@@ -125,7 +125,7 @@ Results of the evaluation will be stored in the perturbed_results folder, using 
 @article{ramesh2023distributionally,
   title={Distributionally robust model-based reinforcement learning with large state spaces},
   author={Ramesh, Shyam Sundhar and Sessa, Pier Giuseppe and Hu, Yifan and Krause, Andreas and Bogunovic, Ilija},
-  journal={arXiv preprint arXiv:2309.02236},
-  year={2023}
+  journal={International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  year={2024}
 }
 ```
