@@ -11,7 +11,25 @@ Clone conda environments rqitry2 and rqicombwthrlkit2 from the environment files
 
 (Or)
 
-Create a python 3.9.16 conda environment, and install package in the environment 'conda install -c conda-forge swig' and pip install mvr_requirements.txt to run the MVR related scripts.
+**MVR Environment**
+Create a python 3.9.16 conda environment, and install swig package in the environment by `conda install -c conda-forge swig` and `pip install mvr_requirements.txt` to run the MVR related scripts.
+
+**RFQI Environment**
+Create conda env with python 3.9.16
+
+```
+pip install gym==0.23.1
+pip install pygame
+conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch
+pip install tensorboard==2.10.0
+pip install imageio==2.9.0
+pip install stable-baselines3==1.1.0
+```
+Install mujoco by following
+https://pytorch.org/rl/reference/generated/knowledge_base/MUJOCO_INSTALLATION.html
+
+`pip install git+https://github.com/Farama-Foundation/d4rl@master#egg=d4rl`
+
 
 We separate the data generation and training process into 2 different environments as they were not compatible with each other. 
 
